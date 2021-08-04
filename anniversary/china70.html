@@ -1,0 +1,70 @@
+<!-- http://www.szewec.com/anniversary/china70.html -->
+
+<!DOCTYPE html>
+<html class="um landscape min-width-240px min-width-320px min-width-480px min-width-768px min-width-1024px">
+
+<head>
+  <title>为祖国喝彩</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="description" content="为祖国喝彩">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+  <meta name="renderer" content="webkit">
+  <meta name="format-detection" content="telphone=no,email=no,address=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="x-dns-prefetch-control" content="on">
+  <link href="css/china70-v01.css" rel="stylesheet">
+</head>
+
+<body ontouchstart>
+  <!-- :style="{background: 'url(' + chinaForm.bgUrl + ') / cover no-repeat' }" -->
+  <div class="flex-container bg" id="app" :style="{backgroundImage:'url(' + chinaForm.bgUrl + ')'}">
+    <div class="flex-item" v-if="!chinaForm.isGenerate">
+      <div class="p1">
+        <input type="text" placeholder="请输入姓名" v-model="chinaForm.username">
+      </div>
+      <div class="p1">
+        <input type="text" placeholder="请输入祝福语" v-model="chinaForm.ananda">
+      </div>
+      <div class="p1">
+        <input :class="{active:chinaForm.selectTemplateIndex==0}" type="button" value="模板一" @click="selectTemplateHandle(0)" />
+        <input :class="{active:chinaForm.selectTemplateIndex==1}" type="button" value="模板二" @click="selectTemplateHandle(1)" />
+      </div>
+      <div class="flex-item generate-button" @click="generateImageHandle">生成海报</div>
+      <div class="p1"></div>  
+    </div>
+    <div class="flex-container flex-item" v-else>
+      <div class="p2" v-html="chinaForm.ananda"></div>
+      <div class="flex-container p2">
+          <div class="p2-1">
+            <img class="barcode" src="img/1569469213.png" />
+          </div>
+          <div class="p2-1 username" v-html="'@' + chinaForm.username"></div>
+      </div>
+      <div class="p2"></div>
+    </div>
+    <!-- <div class="operation-show" v-if="chinaForm.isGenerate">
+        <div class="item1">70：祖国</div>
+        <div class="item2" v-html="chinaForm.ananda"></div>
+        <div class="item3" v-html="'@' + chinaForm.username"></div>
+    </div>
+    <div class="operation-index" v-else>
+      <div class="i-input">
+          <input type="text" placeholder="请输入姓名" v-model="chinaForm.username">
+          <input type="text" placeholder="请输入祝福语" v-model="chinaForm.ananda">
+      </div>
+      <div class="i-template">
+          <input type="button" value="模板一" @click="selectTemplateHandle(0)" />
+          <input type="button" value="模板二" @click="selectTemplateHandle(1)" />
+      </div>
+      <div class="i-btn" @click="generateImageHandle">生成海报</div>
+    </div>
+    <img class="operation-code" src="img/1569469213.png"  v-if="chinaForm.isGenerate" /> -->
+  </div>
+  <script src="js/vue.js"></script>
+  <script src="js/vue-resource.js"></script>
+  <script src="js/china70-v01.js"></script>
+</body>
+
+</html>

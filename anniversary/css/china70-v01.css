@@ -1,0 +1,179 @@
+input {
+  width: 100%;
+  border: 0.1rem solid #fff;
+  height: 2.4rem;
+  border-radius: .2rem;
+  text-align: center;
+  background-color: transparent;
+  margin-bottom: 1.6rem;
+}
+
+input::-webkit-input-placeholder {
+  color: #fff;
+}
+
+#app,body,html {
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: -apple-system,BlinkMacSystemFont,Helvetica Neue,Arial,PingFang SC,Hiragino Sans GB,STHeiti,Microsoft YaHei,Microsoft JhengHei,Source Han Sans SC,Noto Sans CJK SC,Source Han Sans CN,Noto Sans SC,Source Han Sans TC,Noto Sans CJK TC,WenQuanYi Micro Hei,SimSun,sans-serif;
+  /* background-color: #fff; */
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none
+}
+
+.bg {
+  max-width: 750px;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.flex-container {
+  /* background-color: rgb(211, 33, 62); */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: flex-end;
+  width: 100%;
+  margin: 0 auto;
+  /* background-color: #f00; */
+}
+
+.flex-item {
+  /* flex-grow: 0; */
+  text-align: center;
+}
+
+.p1 {
+  text-align: center;
+}
+
+.flex-item .p1:last-child {
+  min-height: 10rem;
+}
+
+/* .flex-item .p1:nth-child(4) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: space-between;
+} */
+
+.p1 input[type="text"] {
+  color: #fff;
+  width: 70vw;
+}
+
+.p1 input[type="button"] {
+  color: #fff;
+  width: 6rem;
+  height: 2.8rem;
+}
+
+.p1 input.active {
+  color: #f00;
+  border-color: #f00;
+  background-color: #fff;
+}
+
+/* .flex-item .p2:nth-child(1) {
+  align-self: flex-start;
+  color: #fff;
+  font-family:'楷体';
+  font-size: 2.6rem;
+  margin-left: 1rem;
+} */
+
+.flex-item .p2:nth-child(1) {
+  align-self: center;
+  color: #fff;
+  font-family:'楷体';
+  font-size: 2.6rem;
+  margin-left: 3rem;
+  text-align: center;
+  word-wrap: break-word;
+  word-break: break-all;
+  overflow: hidden;
+}
+
+.flex-item .p2:nth-child(2) {
+  -ms-flex-direction: row;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.flex-item .p2:nth-child(2) .username {
+  align-self: flex-start;
+  color: #fff;
+  font-family:'楷体';
+  font-size: 2rem;
+  margin-right: 2rem;
+}
+
+.flex-item .p2:last-child {
+  min-height: 0.3rem;
+}
+
+.generate-button {
+  background: rgb(240, 134, 25);
+  width: 16rem;
+  text-align: center;
+  margin: 0.5rem auto;
+  border-radius: 1.5rem;
+  line-height: 2.8rem;
+  color: #fff;
+}
+
+.barcode {
+  margin-left: 1rem;
+  border: 0.3rem solid #fff;
+  width: 50px;
+  height: 50px;
+}
+
+/*字体,华文行楷*/
+/* @font-face {
+  font-family: STXingkaiFont;
+  src: url(../font/STXingkai.eot);
+  src: url('../font/STXingkai.eot'),
+  url('../font/STXingkai.eot#iefix') format('embedded-opentype'),
+  url('../font/STXingkai.woff') format('woff'),
+  url('../font/STXingkai.ttf') format('truetype'),
+  url('../font/STXingkai.svg#fontawesomeregular') format('svg');
+} */
+
+/* .flex-item-ananda {
+    height: 160px;
+    font-family: WebFont;
+    font-size: 30px;
+    text-shadow: 5px 5px 20px rgb(170, 170, 170);
+} */
+
+/* .span {
+  display: inline-block;
+  background: #03A9F4;
+  width: 40%;
+  height: 2.2rem;
+  text-align: center;
+  margin: 1em auto;
+  border-radius: .5rem;
+  line-height: 2rem;
+  color: #fff;
+  font-size: .8rem;
+} */
