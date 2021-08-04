@@ -1,0 +1,167 @@
+/**
+ * @Author: laichengliang
+ * @Date: 2017-10-28 17:58
+ * @Desc: animation styles
+ */
+@charset "utf-8";
+/*@keyframes rotate{
+	0%{transform: rotate(0deg);}
+	25%{transform: rotate(60deg);}
+	75%{transform: rotate(-60deg);}
+	100%{transform: rotate(0deg);}
+}
+.box{
+	animation: rotate 1s linear infinite;
+}*/
+.a-delay500ms{
+	animation-delay: 500ms;
+}
+.a-delay1500ms{
+	animation-delay: 1500ms;
+}
+.a-delay2500ms{
+	animation-delay: 2500ms;
+}
+.a-delay6000ms{
+	animation-delay: 6000ms;
+}
+.a-delay6500ms{
+	animation-delay: 6500ms;
+}
+.a-delay7500ms{
+	animation-delay: 7500ms;
+}
+.a-delay2s{
+	animation-delay: 2s;
+}
+@keyframes toTop{
+	0%{transform: translateY(0%);}
+	100%{transform: translateY(-100%);}
+}
+.toTop{
+	animation: toTop 0.5s both linear;
+}
+/*页面向下的动画*/
+@keyframes toBottom{
+	0%{transform: translateY(0%);}
+	100%{transform: translateY(100%);}
+}
+.toBottom{
+	animation: toBottom 0.5s both linear;
+}
+/*下一页向上*/
+@keyframes nextTop{
+	0%{transform: translateY(100%);}
+	100%{transform: translateY(0%);}
+}
+.nextTop{
+	animation: nextTop 0.5s both linear;
+}
+/*上一页向下*/
+@keyframes prevBottom{
+	0%{transform: translateY(-100%);}
+	100%{transform:translateY(0%);}
+}
+.prevBottom{
+	animation: prevBottom 0.5s both linear;
+}
+@keyframes xuanzhuan{
+	0%{transform: rotate(0deg);}
+	100%{transform: rotate(360deg);}
+}
+.music{
+	animation: xuanzhuan 2s linear infinite;
+}
+@keyframes upDown{
+	0%{transform: translateY(0px);}
+	50%{transform: translateY(-50px);}
+	100%{transform: translateY(0px);}
+}
+.up{
+	animation: upDown;
+}
+/**/
+@keyframes  rotate{
+	0%{transform: rotate(0deg);}
+	25%{transform: rotate(30deg);}
+	75%{transform: rotate(-30deg);}
+	100%{transform: rotate(0deg);}
+}
+.hua{
+	animation: rotate 2s linear infinite;
+}
+.flyIn{
+	animation: flyIn 2s both linear;
+}
+@keyframes fangda{
+	0%{transform: scale(1);}
+	50%{transform: scale(0.8);}
+	100%{transform: scale(1);}
+}
+.cloud{
+	animation: fangda 2s linear infinite;
+}
+@keyframes flyIn{
+	0%{transform: translateY(-100%) scale(0)}
+	50%{transform: translateY(0%) scale(0.5)}
+	100%{transform: translate(0%) scale(1)}
+}
+.scale{
+	animation: fangda 2s linear infinite;
+}
+@keyframes fadeIn{
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
+.fadeIn{
+	animation-name: fadeIn;
+	animation-duration: 1s;
+	animation-fill-mode: both;
+	animation-timing-function: linear;
+	/*animation: fadeIn 1s both linear 500ms;*/
+}
+/*第三页动画*/
+@keyframes  go{
+	0%{ transform: translateX(0%);}
+	100%{transform: translateX(-100%);}
+}
+.go{
+	animation: go 2s both linear 3500ms;
+}
+@keyframes zhui{
+	0%{right: -30%;}
+	100%{right: 30%;}
+}
+.zhui{
+	animation: zhui 2s both linear 3100ms;
+}
+@keyframes zi1{
+	0%{ width: 0%;}
+	100%{width: 30%;}
+}
+.zi1{
+	animation-name: zi1;
+	animation-duration: 1s;
+	animation-fill-mode: both;
+	animation-timing-function: linear;
+	/*animation:zi1 1s both linear ;*/
+}
+@keyframes zi2{
+	0%{width: 0%;}
+	100%{width: 60%;}
+}
+.zi2{
+	animation-name: zi2;
+	animation-duration: 1s;
+	animation-fill-mode: both;
+	animation-timing-function: linear;
+	/*animation:zi1 1s both linear ;*/
+}
+/**/
+@keyframes fadeOut{
+	0%{opacity: 1;}
+	100%{opacity: 0;}
+}
+.fadeOut{
+	animation: fadeOut 1s both linear;
+}
