@@ -7,7 +7,7 @@
     year: '',
     days: '',
     type: '',
-    urlConfig: 'http://api.ccd327185a58d48e692c95437866196ae.cn-shenzhen.alicontainer.com/',
+    urlConfig: 'https://ei-gate.gcnao.cn/',
     // urlConfig: 'http://eip-test.gcnao.cn:8080/',
     bgImg: ''
   },

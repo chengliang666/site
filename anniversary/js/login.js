@@ -2,7 +2,7 @@
   el: "#Page",
   data: {
     // urlConfig: 'http://eip-test.gcnao.cn:8080/',
-    urlConfig: 'http://api.ccd327185a58d48e692c95437866196ae.cn-shenzhen.alicontainer.com/',
+    urlConfig: 'https://ei-gate.gcnao.cn/',
     isCap: true,
     getCapWord: '获取验证码',
     loginForm: {
