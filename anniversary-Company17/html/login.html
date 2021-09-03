@@ -1,0 +1,91 @@
+<!--
+ * @Author: laichengliang
+ * @Date: 2019-08-23 10:20
+ * @Desc: 登陆页
+ -->
+<!DOCTYPE html>
+<html class="um landscape min-width-240px min-width-320px min-width-480px min-width-768px min-width-1024px">
+
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+  <!-- <link rel="stylesheet" href="css/login.css"> -->
+</head>
+
+<body class="" ontouchstart>
+  <div class="bc-bg" id="Page" :style="{backgroundImage:'url(' + loginForm.bgUrl + ')'}">
+    <div class="login_div">
+      <input type="text" placeholder="请输入您的手机号" v-model="loginForm.username">
+      <div class="div_1">
+        <input type="text" placeholder="请输入验证码" style="width: 56%;" v-model="loginForm.captcha">
+        <span class="span" @click="getCap">{{getCapWord}}</span>
+      </div>
+      <div class="btn" @click="handleLoginCap">生成成就卡片</div>
+    </div>
+  </div>
+  <script src="../js/vue.js"></script>
+  <script src="../js/vue-resource.js"></script>
+  <script src="../js/login.js"></script>
+</body>
+
+</html>
+<style>
+  html,
+  body {
+    height: 100%;
+    margin: 0;
+  }
+
+  #Page {
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .login_div {
+    position: absolute;
+    bottom: 3%;
+    left: 20%;
+    width: 60%;
+  }
+
+  .div_1{
+    margin-top: .6em;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  input {
+    width: 100%;
+    border: none;
+    border: 1px solid #ccc;
+    height: 2em;
+    border-radius: .5em;
+    text-align: center;
+  }
+
+  .span {
+    display: inline-block;
+    background: #03A9F4;
+    width: 40%;
+    height: 2.2em;
+    text-align: center;
+    /* margin: 1em auto; */
+    border-radius: .5em;
+    line-height: 2em;
+    color: #fff;
+    font-size: .8em;
+  }
+
+  .btn {
+    background: #673AB7;
+    width: 60%;
+    height: 2.5em;
+    text-align: center;
+    margin: 1em auto;
+    border-radius: 1.5em;
+    line-height: 2.5em;
+    color: #fff;
+  }
+</style>

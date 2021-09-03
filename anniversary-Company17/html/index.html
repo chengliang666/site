@@ -1,0 +1,82 @@
+<!--
+ * @Author: laichengliang
+ * @Date: 2019-08-23 10:21
+ * @Desc: 卡片展示页
+ -->
+<!DOCTYPE html>
+<html class="um landscape min-width-240px min-width-320px min-width-480px min-width-768px min-width-1024px">
+
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+  <!-- <link rel="stylesheet" href="css/login.css"> -->
+</head>
+
+<body class="" ontouchstart>
+  <div class="bc-bg" id="Page" ref="Page" v-cloak>
+    <div class="login_div">
+      <div>亲爱的
+        <span class="name">{{userNmae}}</span>
+      </div>
+      <div>你已陪伴深高速顾问走过
+        <span class="name">{{year}}</span>年
+        <span class="name">{{days}}</span>天</div>
+      <div>确认过眼神，你就是
+        <!-- 见证辉煌的开创元勋（15年以上）/不忘初心的忠实老铁（10-15）/风雨同舟的硬核队友（5-10年）/共担责任的至诚伙伴（3-5年） /活力满满的新锐力量（3年以下） -->
+        <!-- 忠实老铁（10年以上）/敲硬核队友（6-10年）/至诚伙伴（3-5年） /新锐力量（3年以下） -->
+        <span class="name">{{type}}</span>
+      </div>
+      <div class="div_1">深高速顾问17周年之际</div>
+      <div>感恩有你一路同行</div>
+      <div>希望我们不恋过往，不惧未来</div>
+      <div>为了更美好的明天冲鸭</div>
+    </div>
+  </div>
+  <script src="../js/vue.js"></script>
+  <script src="../js/vue-resource.js"></script>
+  <script src="../js/index.js"></script>
+</body>
+
+</html>
+<style>
+  html,
+  body {
+    height: 100%;
+    margin: 0;
+  }
+
+  [v-cloak] {
+    display: none
+  }
+
+  #Page {
+    height: 100%;
+    /* background: url(img/index.jpg) no-repeat 100% 100%; */
+    background-size: cover;
+  }
+
+  .login_div {
+    padding: 2em;
+    color: #000;
+    font-family: "MicrosoftYaHei";
+    font-size: .85em;
+  }
+
+  .div_1{
+    color: #e40b0b;
+    font-size: 1.15em;
+    margin-bottom: .6em;
+    font-weight: bold;
+  }
+
+  .login_div div {
+    margin-bottom: .6em;
+  }
+
+  .name {
+    font-size: 1.15em;
+    color: #000;
+    font-weight: bold;
+  }
+</style>
